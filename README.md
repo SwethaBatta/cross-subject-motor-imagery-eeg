@@ -4,11 +4,7 @@
 
 In this project, I explored whether EEG recordings from multiple participants could be used to classify imagined left- and right-hand movements in a participant whose recordings were not included during model training.
 
-<<<<<<< HEAD
 Two classification approaches are compared:
-=======
-This is an independent, exploratory analysis of offline EEG data. 
->>>>>>> aac587a63f13afca70ab92502fd99ddf0237b7ea
 
 1. Common Spatial Patterns (CSP) followed by Linear Discriminant Analysis (LDA).
 2. Log-transformed mu- and beta-band power features followed by standardized Logistic Regression.
@@ -57,16 +53,7 @@ This work is an independent exploratory analysis of a publicly available EEG dat
 - `results/subject_trial_counts.csv` — trial counts by participant.
 - `results/cross_subject_accuracy.png` — participant-level CSP + LDA accuracy plot.
 
-## 6. Software and references
+## 6. Data Sources and Citations
 
-The analysis uses MNE-Python for EEG data handling and preprocessing, SciPy for spectral feature extraction, and scikit-learn for model fitting and evaluation.
-
-- [PhysioNet EEG Motor Movement/Imagery Dataset](https://physionet.org/content/eegmmidb/1.0.0/)
-- [MNE-Python EEGBCI dataset documentation](https://mne.tools/stable/generated/mne.datasets.eegbci.load_data.html)
-- [MNE-Python Common Spatial Patterns documentation](https://mne.tools/stable/generated/mne.decoding.CSP.html)
-- [scikit-learn Linear Discriminant Analysis](https://scikit-learn.org/stable/modules/lda_qda.html)
-- [scikit-learn Logistic Regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
-<<<<<<< HEAD
-=======
-
->>>>>>> aac587a63f13afca70ab92502fd99ddf0237b7ea
+- Dataset: PhysioNet EEG Motor Movement/Imagery Dataset (EEGMMIDB). https://doi.org/10.13026/C28G6P
+- Dataset reference: Schalk, G., McFarland, D. J., Hinterberger, T., Birbaumer, N., & Wolpaw, J. R. (2004). BCI2000: A general-purpose brain-computer interface system. IEEE Transactions on Biomedical Engineering, 51(6), 1034–1043.
